@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weather App</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" >
+	<link rel="stylesheet" type="text/css" href="assets\animate.css">
+	<link rel="stylesheet" type="text/css" href="assets\main.css">
+	<link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
+</head>
+<body>
+
+<div id="weather">
+	<div class="container conta animated fadeInDown">
+		<h1 class="text-center justify-content-center">Weather Forecast</h1>
+	</div>
+	<div class="text-center justify-content-center" style="height: 30vh;" id="icon">
+		<div class="container text-center justify-content-center" id="place" style="height: 70px;">
+		</div>
+	</div>
+	<div class="container">
+		<div class="row text-center justify-content-center" style="height:120px">
+			<div class="col-sm-4" id="Weather">
+				<p class="animated fadeInDown">Weather:</p>	
+			</div>
+			<div class="col-sm-4" id="temp">
+				<p class="animated fadeInDown">Temp:</p>
+			</div>
+			<div class="col-sm-4" id="wind">
+				<p class="animated fadeInDown">Wind:</p>
+			</div>			
+		</div>
+	</div>
+  <div id="searchbox" class="animated fadeInDown">
+      <input type="text" name="search" id="search" placeholder="Search here" required="required" />
+      <button id="searchbutton" class="btn btn-primary">Search</button>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.slim.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets\main.js"></script>
+
+</body>
+</html>
