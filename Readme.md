@@ -1,2 +1,2 @@
-Weather application
-<a href="https://sailok.github.io/weather-app/">Live demo here!!</a>
+Weather application<br>
+<a href="https://sailok.github.io/weather-app/" target="_blank">Live demo here!!</a>
