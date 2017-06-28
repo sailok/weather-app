@@ -31,6 +31,9 @@ button.addEventListener("click" , function(){
 	request.open("GET","http://api.openweathermap.org/data/2.5/weather?q="+city.value+"&appid=0ca412830cb30b338b6dcfae48451f84&units=metric");
 	request.onload=function(){
 		var data=JSON.parse(request.responseText);
+		if(request.status==404){
+			window.alert("City not found")
+		}
 		show(data);console.log(data.name);
 	}
 	request.send();
