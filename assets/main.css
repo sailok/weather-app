@@ -6,17 +6,30 @@ body{
 
 #weather{
   background-color:#2980b9;
-  height:100vh;
+  height:100%;
 }
 
+
 #searchbox{
-  width:650px;
+  width:90%;
   height:130px;
   background-color:#2ecc71;
   position:relative;
   margin:auto;
   border-radius:5px;
   border:0.5px solid #fff;
+}
+
+@media (min-width:650px){
+  #searchbox{
+  width:675px;
+  height:130px;
+  background-color:#2ecc71;
+  position:relative;
+  margin:auto;
+  border-radius:5px;
+  border:0.5px solid #fff;
+}
 }
 
 #search{
@@ -40,6 +53,15 @@ body{
   width:25%;
   padding-left:10px;
  }
+
+@media (max-width:650px){
+  .conta2{
+    padding-bottom: 200px;
+  }
+  #place{
+    padding-top: 40px;
+  }
+}
 
 .conta{
   height: 25vh;
@@ -79,3 +101,8 @@ p{
   margin-bottom: 0;
 }
 
+.jumbotron{
+  padding-top: 0px;
+  padding-bottom: 20px;
+  margin-bottom: 0rem;
+}
