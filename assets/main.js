@@ -28,7 +28,7 @@ var button=document.getElementById("searchbutton");
 
 button.addEventListener("click" , function(){
 	var request= new XMLHttpRequest();
-	request.open("GET","http://api.openweathermap.org/data/2.5/weather?q="+city.value+"&appid=0ca412830cb30b338b6dcfae48451f84&units=metric");
+	request.open("GET","https://api.openweathermap.org/data/2.5/weather?q="+city.value+"&appid=0ca412830cb30b338b6dcfae48451f84&units=metric");
 	request.onload=function(){
 		var data=JSON.parse(request.responseText);
 		if(request.status==404){
